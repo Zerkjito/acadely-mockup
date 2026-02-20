@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --content './src/**/*.{html,js}' --watch",
+    "reinstall": "rm -rf node_modules package-lock.json && npm install"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "@tailwindcss/postcss": "^4.1.18",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18"
+  }
+}

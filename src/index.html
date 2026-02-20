@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="output.css">
+   <link rel="shortcut icon" href="../assets/icons/logos/favicon-acadely.svg" type="image/svg+xml">
+   <link rel="shortcut icon" href="../assets/icons/logos/favicon-acadely.ico" type="image/x-icon">
+   <title>Acadely: Comienza tu aprendizaje hoy mismo</title>
+
+</head>
+
+<body>
+   <div class="bg-primary">
+      <header class="relative">
+
+         <!-- main nav -->
+         <nav
+            class="flex items-center justify-between px-[clamp(1rem,2.5vw,3.5rem)] py-[clamp(1rem,2.5vw,1.2rem)] line-separator after:border-white/20  lg:after:hidden">
+
+            <div class="flex items-center gap-12">
+               <a class="flex items-center" href="#">
+                  <!-- SVG logo -->
+                  <img src="../assets/icons/logos/logo-acadely-v2.svg" alt="Logo Acadely" class="h-13 w-auto">
+               </a>
+
+               <ul class="hidden lg:flex gap-8 font-medium text-[1rem]">
+                  <li><a href="#" class="hover:opacity-70 transition-opacity">Descubrir profesores</a></li>
+                  <li><a href="#" class="hover:opacity-70 transition-opacity">Conviértete en profesor</a></li>
+                  <li><a href="#" class="hover:opacity-70 transition-opacity">Acerca de nosotros</a></li>
+               </ul>
+            </div>
+
+            <div class="flex items-center gap-4">
+
+               <button class="hidden lg:inline-flex btn btn-outline">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 16 16">
+                     <path fill="#000"
+                        d="M8 14v-1.333h4.667V3.333H8V2h4.667q.549 0 .942.392.391.392.391.941v9.334q0 .549-.391.942-.391.391-.942.391zm-1.333-2.667-.917-.966 1.7-1.7H2V7.333h5.45l-1.7-1.7.917-.966L10 8z" />
+                  </svg>
+                  Iniciar sesión
+               </button>
+
+               <button id="menu-btn" class="block p-2 cursor-pointer lg:hidden" aria-expanded="false"
+                  aria-controls="mobile-menu">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                     <line x1="3" y1="12" x2="21" y2="12"></line>
+                     <line x1="3" y1="6" x2="21" y2="6"></line>
+                     <line x1="3" y1="18" x2="21" y2="18"></line>
+                  </svg>
+               </button>
+            </div>
+
+         </nav>
+
+         <!-- mobile menu -->
+         <div id="mobile-menu" class="hidden bg-primary w-full px-6 py-6 transition-all lg:hidden">
+            <ul class="flex flex-col gap-6 font-medium text-lg text-center">
+               <li><a class="hover:opacity-70" href="#">Descubrir profesores</a></li>
+               <li><a class="hover:opacity-70" href="#">Conviértete en profesor</a></li>
+               <li><a class="hover:opacity-70" href="#">Acerca de nosotros</a></li>
+               <li class="flex justify-center mt-4">
+                  <button class="btn btn-outline w-full max-w-xs">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 16 16">
+                        <path fill="#000"
+                           d="M8 14v-1.333h4.667V3.333H8V2h4.667q.549 0 .942.392.391.392.391.941v9.334q0 .549-.391.942-.391.391-.942.391zm-1.333-2.667-.917-.966 1.7-1.7H2V7.333h5.45l-1.7-1.7.917-.966L10 8z" />
+                     </svg>
+                     Iniciar sesión
+                  </button>
+               </li>
+            </ul>
+         </div>
+      </header>
+
+      <!-- hero section -->
+      <section class="w-full pt-8 pb-12 px-[clamp(1rem,3.5vw,3rem)]">
+
+         <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
+
+            <div class="flex flex-col gap-6 order-2 mt-6 lg:mt-0 lg:order-1 text-left">
+
+               <h1 class="font-bold font text-[clamp(2rem,4vw+1rem,4.5rem)] leading-none text-balance">
+                  Estudia idiomas, conecta con el mundo.
+               </h1>
+
+               <h3 class="text-[clamp(1rem,2vw+1rem,2rem)] font-bold [text-shadow:2px_2px_0_rgba(250,250,250,0.5)]">
+                  Aprende, mejora, domina.
+               </h3>
+
+               <button class="btn btn-accent w-full lg:w-fit group">
+                  Buscar profesor
+                  <svg
+                     class="transition-transform duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:translate-x-2"
+                     xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 16 16">
+                     <path fill="#fef7ff"
+                        d="M10.783 8.667H2.667V7.333h8.116L7.05 3.6 8 2.667 13.333 8 8 13.333l-.95-.933z" />
+                  </svg>
+               </button>
+            </div>
+
+            <div class="order-1 md:order-1 lg:order-2">
+               <!-- hero image -->
+               <img loading="eager" src="../assets/images/hero-img.webp" alt="Profesores reunidos en una sala"
+                  class="rounded-md lg:h-auto md:h-80  shadow-lg">
+            </div>
+
+         </div>
+      </section>
+   </div>
+
+
+
+   <!-- languages grid layout -->
+   <section class=" grid place-content-center px-[clamp(1.5rem,5vw,12rem)] py-10 gap-6 grid-cols-1 xl:grid-cols-3
+         lg:grid-cols-2">
+      <div class="learning-card">
+         <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="none" viewBox="0 0 48 48">
+            <path fill="#000"
+               d="M24.002 5c.062 0 .162.174.276.44l.178.456.09.26.172.55.076.27.126.5c.052.228.082.414.082.524l-.006.104c.554.118 1.06.332 1.514.62q.028-.195.126-.366.223-.32.502-.592l.392-.386.422-.39.408-.344c.32-.26.574-.426.642-.386.08.046.04.476-.056 1.004l-.112.55-.134.554-.14.496q-.072.256-.192.494a1 1 0 0 1-.638.474 5.94 5.94 0 0 1 .836 5.922 2 2 0 0 1-.61.814l-.206.142.036.008a4 4 0 0 1 3.204 3.606l.012.316v3.532l.586-.586a2 2 0 0 1 2.994 2.64l-.166.188-3.414 3.414V35a2 2 0 0 1 1.986 1.766l.014.234v4a2 2 0 0 1 .234 3.986l-.234.014h-18a2 2 0 0 1-.234-3.986l.234-.014v-4a2 2 0 0 1 1.766-1.986l.234-.014v-7.172l-3.414-3.414a2 2 0 0 1-.568-1.152L13.002 23V10.732a2 2 0 0 1 .766-3.72L14.002 7h2a2 2 0 0 1 1.848 2.768l-.114.228 1.328 2.656a5.9 5.9 0 0 1 1.21-2.82 1 1 0 0 1-.638-.474 3 3 0 0 1-.192-.494l-.14-.496-.134-.554-.112-.55c-.096-.528-.138-.958-.056-1.004.068-.04.322.128.642.386l.408.344.422.39.392.386c.24.248.428.464.502.592a1 1 0 0 1 .126.368 4.6 4.6 0 0 1 1.514-.622L23.002 8c0-.11.03-.296.08-.524l.128-.5.16-.546q.085-.269.18-.534l.176-.456c.114-.266.214-.44.276-.44m5 34h-10v2h10zm-2-16.172-6 6V35h6zm-10-5.356v4.7l2.5 2.5 4.61-4.61-5.502-1.1c-.836-.168-1.256-.786-1.608-1.49m7-5.472c-.166 0-.386.074-.602.326a1.8 1.8 0 0 0-.398 1.174q0 .28.066.52l.074.226a2 2 0 0 1-.012 1.54l1.968.394a2 2 0 0 1-.32-1.682l.084-.252c.094-.238.142-.49.14-.746a1.8 1.8 0 0 0-.398-1.174c-.216-.252-.436-.326-.602-.326m-9-12c.312 0 2 2.896 2 4a2 2 0 1 1-4 0c0-1.104 1.688-4 2-4" />
+         </svg>
+         <div class="flex flex-col text-left">
+            <h3 class="font-bold text-[clamp(1.5rem,2.5vw,2rem)]">
+               Aprende inglés
+            </h3>
+
+            <p class="font-light">
+               3.489 profesores
+            </p>
+         </div>
+      </div>
+
+      <div class="learning-card">
+         <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="none" viewBox="0 0 48 48">
+            <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+               d="M21 8c0 11-3.5 25-10 36M27 8c0 11 3.5 25 10 36M4 44h40" />
+            <path stroke="#000" stroke-linecap="round" stroke-width="2" d="M14 30h20m-17-9h14M20 8h8m-4-4v4" />
+            <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+               d="M18 44s.813-2.812 2-4c1-1 2-2 4-2s3 1 4 2c1.344 1.344 2 4 2 4" />
+         </svg>
+
+         <div class="flex flex-col text-left">
+            <h3 class="font-bold text-[clamp(1.5rem,2.5vw,2rem)]">
+               Aprende francés
+            </h3>
+
+            <p class="font-light">
+               1.215 profesores
+            </p>
+         </div>
+      </div>
+
+      <div class="learning-card">
+         <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="none" viewBox="0 0 48 48">
+            <path fill="#000"
+               d="M46.002 20.738a3.82 3.82 0 0 0-3.177-1.936h-.15c-.6 0-1.193.143-1.728.413a21.7 21.7 0 0 1-9.095 1.973h-4.426a88 88 0 0 0-.162-2.126l.018-.026.013-.058a4.7 4.7 0 0 0 .61-1.376h1.81a6.106 6.106 0 0 0 6.09-6.085V9.276a3.15 3.15 0 0 0 1.674-1.386l.02-.047.023-.046.537-1.103a2.19 2.19 0 0 0-.75-2.889 2.175 2.175 0 0 0-2.617.252 2.285 2.285 0 0 0-3.447-.2l-.812.812-.031.03-.029.033a3.08 3.08 0 0 0-.783 2.205v4.448h-1.467a7 7 0 0 0-.345-1.281 3.96 3.96 0 0 0-.028-2.277 2.4 2.4 0 0 0 .195-1.704 2.5 2.5 0 0 0 .142-1.433 2.444 2.444 0 0 0-2.373-1.963 2.6 2.6 0 0 0-.405-.276 2.46 2.46 0 0 0-1.867-.186 3.85 3.85 0 0 0-5.085.361 5.13 5.13 0 0 0-4.587 5.118v.239A6.075 6.075 0 0 0 9 13.49q-.015.15-.01.3c-.055.916.06 1.836.344 2.71a7.3 7.3 0 0 0-1.374 4.273V22.2l-.235.28a3.5 3.5 0 0 0-.77 2.156v1.35a2.25 2.25 0 0 0 2.25 2.25h.182c.316-.026.622-.119.9-.271a2.25 2.25 0 0 0 2.935-1.403 2.4 2.4 0 0 0 .315-.347 6.8 6.8 0 0 0-.187 1.625v.93a9.87 9.87 0 0 1-3.9 7.8 5.56 5.56 0 0 0-2.1 4.416 5.526 5.526 0 0 0 4.468 5.414q.435.102.885.102h14.882a3.78 3.78 0 0 0 3.45-2.278 4.9 4.9 0 0 0 4.128 2.276h3.256l-.843-2.067-1.102-2.7a3.78 3.78 0 0 0 2.376-3.43.885.885 0 0 1 .88-.803h1.758a5.325 5.325 0 0 0 5.012-5.4v-9.495a3.9 3.9 0 0 0-.498-1.867m-16.287-7.853a1.38 1.38 0 0 0 1.38-1.38V6.87a1.6 1.6 0 0 1 .405-1.14l.825-.825a.8.8 0 0 1 .552-.237h.01a.78.78 0 0 1 .773.927.75.75 0 0 1-.21.405l-.036.036 1.2.339h.157a.32.32 0 0 0 .278-.165l.54-.9a.675.675 0 0 1 .918-.24.69.69 0 0 1 .225.93l-.555 1.14a1.62 1.62 0 0 1-1.406.816h-.466v3.549a4.605 4.605 0 0 1-4.59 4.59h-1.688a4.65 4.65 0 0 0-.862-2.383l-.45-.75c0-.044.016-.088.018-.131v.054zm-5.85-9.183a.928.928 0 0 1 1.2.738 1 1 0 0 1 .825-.195.9.9 0 0 1 .601.429.93.93 0 0 1 .104.735c-.06.24-.21.45-.42.585a.94.94 0 0 1-.495 1.65 1 1 0 0 1-.645-.15.9.9 0 0 1-.233.3v.351l-.069 1.698a3.4 3.4 0 0 1-2.043 3.042 3.87 3.87 0 0 1-2.947.048l-.141-.059a3.39 3.39 0 0 1-2.02-3.024l-.068-1.698h.009v-.19l-.008-.22a1.11 1.11 0 0 1 .58-1.034l.037-.015.036-.015a1.65 1.65 0 0 0 .852-.888l.058-.14a.188.188 0 0 1 .33-.036 2.76 2.76 0 0 0 2.282 1.2h1.25l-.056-.02a.93.93 0 0 1-.324-1.529.9.9 0 0 1 .75-.285 1 1 0 0 1 0-.825l.025-.045a.96.96 0 0 1 .533-.408zm-11.1 15.9a2.5 2.5 0 0 0-.282 1.22v4.065a.75.75 0 0 1-.255.571.75.75 0 0 1-.422.177.75.75 0 0 1-.42.922.75.75 0 0 1-.567 0 .8.8 0 0 1-.244-.157l-.6-.586v.166a.765.765 0 0 1-.705.765h-.06a.75.75 0 0 1-.75-.75v-1.35a1.95 1.95 0 0 1 .42-1.2l.465-.555a.53.53 0 0 0 .12-.39v-1.725a5.8 5.8 0 0 1 1.587-4 6 6 0 0 1 1.098-.9l4.74-2.296q.285-.135.6-.157h.097a1.571 1.571 0 0 1 .518 3.054L15 17.991l-1.395.684c-.356.231-.646.55-.843.925zm1.215 5.268v-3.637c.732.25 1.498.383 2.27.394l.086.657a6.7 6.7 0 0 0-2.36 2.727q.006-.069.004-.141M45 23.325a1.38 1.38 0 0 0-1.365-1.365 1.41 1.41 0 0 0-1.305 1.41v1.35A2.28 2.28 0 0 1 40.065 27h-.435a1.98 1.98 0 0 0-1.995 1.95 2.25 2.25 0 0 1-2.25 2.265H33.75a2.234 2.234 0 0 0-2.25 2.235v.06l2.85 6.99 1.836 4.5h-1.02a3.4 3.4 0 0 1-3-1.815l-.776-1.51-.45-.866-2.614-5.1h-2.1A2.235 2.235 0 0 0 24 37.935a2.265 2.265 0 0 1-2.25 2.265h-2.46L16.755 45a2.055 2.055 0 0 1-2.055-1.848 2.1 2.1 0 0 1 .15-.987l.78-1.965h-2.88a2.445 2.445 0 0 0-2.445 2.445 2.4 2.4 0 0 0 1.533 2.194q.18.066.366.101a.2.2 0 0 1-.07-.008 4 4 0 0 1-.806-.24 4.08 4.08 0 0 1-.978-6.922 11.37 11.37 0 0 0 4.5-9v-.93a5.16 5.16 0 0 1 3.084-4.724q-.15-1.559-.416-3.103c-.084-.482-.204-.956-.3-1.434l1.49-.729a3.105 3.105 0 0 0 1.71-4.118 3 3 0 0 0-.245-.397L22.5 15.42a.54.54 0 0 0 .807-.1.56.56 0 0 0 .091-.29v-2.145h1.5l1.02 1.665a3.135 3.135 0 0 1 .12 3.6 1.5 1.5 0 0 0-.27 1.035 71 71 0 0 1 .231 3.495h5.853c3.374 0 6.705-.724 9.773-2.13a2.3 2.3 0 0 1 1.05-.25h.091A2.325 2.325 0 0 1 45 22.604zM31.5 33.563c-.015.472 0 .45 0 0M23.28 5.55a.56.56 0 0 1 .495-.255.57.57 0 0 1 .09-.585.6.6 0 0 1 .57-.18.59.59 0 0 1 .405.45.56.56 0 0 1 .48-.111.54.54 0 0 1 .42.66.6.6 0 0 1-.24.36.57.57 0 0 1 .195.345.45.45 0 0 1-.12.45.585.585 0 0 1-.75.09.56.56 0 0 1-.377.33.57.57 0 0 1-.585-.176.6.6 0 0 1-.112-.243.6.6 0 0 1 0-.267.6.6 0 0 1-.48-.24.54.54 0 0 1 0-.63zM19.5 8.37a.63.63 0 0 0-.6.63q-.005.082 0 .165h-.285a.15.15 0 0 1-.087-.018.2.2 0 0 1-.108-.134.15.15 0 0 1 0-.088l.033-.102a.3.3 0 0 1-.081-.362.3.3 0 0 1 .078-.106 1.5 1.5 0 0 1 .81-.24q.211.016.405.102a.99.99 0 0 1 .69.783.17.17 0 0 1-.101.154.2.2 0 0 1-.064.011h-.054q.005-.082 0-.165a.63.63 0 0 0-.636-.63m4.35.09a.315.315 0 0 1-.075.36l.033.102q.01.046 0 .088a.2.2 0 0 1-.108.14.15.15 0 0 1-.087.018h-.28q.006-.082 0-.165a.615.615 0 0 0-1.23 0q-.003.083 0 .165h-.068A.165.165 0 0 1 21.87 9a.99.99 0 0 1 .715-.79 1.2 1.2 0 0 1 .38-.095 1.5 1.5 0 0 1 .81.24q.049.045.075.105m-4.065.285A.36.36 0 0 1 19.89 9a.3.3 0 0 1-.09.165h-.63a.3.3 0 0 1 0-.165q0-.096.046-.179a.12.12 0 0 0 .173.037.12.12 0 0 0 .006-.191.36.36 0 0 1 .39.078m3.243.117q.03.065.027.138a.3.3 0 0 1 0 .165h-.63a.3.3 0 0 1-.09-.165q0-.072.027-.138l.02-.04a.12.12 0 0 0 .172.036.12.12 0 0 0 .006-.191.36.36 0 0 1 .468.195m-.768 2.043a.11.11 0 0 1 .022.116 1.378 1.378 0 0 1-2.356 0 .1.1 0 0 1 .01-.1.1.1 0 0 1 .089-.046q.043 0 .075.03a2.24 2.24 0 0 0 2.01 0 .105.105 0 0 1 .15 0m-1.71-.576a.36.36 0 0 1-.056-.318l.36-1.155a.27.27 0 0 1 .51 0l.36 1.155a.36.36 0 0 1-.055.318.38.38 0 0 1-.29.15h-.54a.38.38 0 0 1-.29-.15M23.887 7.5a.2.2 0 0 1 0 .087.24.24 0 0 1-.286.202h-.105a1.8 1.8 0 0 0-.996-.214.236.236 0 0 1-.27-.188.225.225 0 0 1 .18-.255c.468-.075.946.003 1.365.225q.04.018.069.053.03.041.043.09m-5.482.165a.23.23 0 0 1-.023-.165.24.24 0 0 1 .098-.135 2.25 2.25 0 0 1 1.38-.225q.045.004.08.028a.2.2 0 0 1 .094.141q.005.045-.01.086a.224.224 0 0 1-.254.18 1.8 1.8 0 0 0-1.065.18l-.105.03a.24.24 0 0 1-.195-.12" />
+         </svg>
+
+         <div class="flex flex-col text-left">
+            <h3 class="font-bold text-[clamp(1.5rem,2.5vw,2rem)]">
+               Aprende español
+            </h3>
+
+            <p class="font-light">
+               2.863 profesores
+            </p>
+         </div>
+      </div>
+
+      <div class="learning-card">
+         <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="none" viewBox="0 0 48 48">
+            <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 44h40" />
+            <path stroke="#000" stroke-linejoin="round" stroke-width="2" d="m21.25 7.474 15.455 4.142L28 44H11z" />
+            <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+               d="m19.317 6.957 19.319 5.176M16.21 18.548l19.32 5.176" />
+            <path stroke="#000" stroke-linecap="round" stroke-width="2" d="m25.482 20.932 1.036-3.864" />
+            <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+               d="m13.106 30.14 19.318 5.176" />
+            <path stroke="#000" stroke-linecap="round" stroke-width="2" d="m22.482 31.932 1.036-3.864" />
+            <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+               d="m33.876 6.716-7.727-2.07a1 1 0 0 0-1.225.707l-.517 1.932a1 1 0 0 0 .707 1.224l7.727 2.071a1 1 0 0 0 1.225-.707l.517-1.932a1 1 0 0 0-.707-1.225" />
+            <path stroke="#000" stroke-linecap="round" stroke-width="2" d="m19.482 42.932 1.036-3.864" />
+         </svg>
+
+         <div class="flex flex-col text-left">
+            <h3 class="font-bold text-[clamp(1.5rem,2.5vw,2rem)]">
+               Aprende italiano
+            </h3>
+
+            <p class="font-light">
+               1.118 profesores
+            </p>
+         </div>
+      </div>
+
+      <div class="learning-card">
+         <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="none" viewBox="0 0 48 48">
+            <path fill="#000"
+               d="M40.5 15.75h-2.25V13.5A8.26 8.26 0 0 0 30 5.25h-1.824c-2.344-1.916-5.455-3-8.676-3-7.031 0-12.75 5.048-12.75 11.25V39a3.75 3.75 0 0 0 3.75 3.75h24A3.75 3.75 0 0 0 38.25 39v-.75h2.25A5.25 5.25 0 0 0 45.75 33V21a5.25 5.25 0 0 0-5.25-5.25m-21-9c2.41 0 4.688.866 6.27 2.376.419.4.976.624 1.556.624H30a3.75 3.75 0 0 1 3.675 3H11.303c.457-3.375 3.958-6 8.197-6m14.25 31.5h-22.5v-21h22.5zm7.5-5.25a.75.75 0 0 1-.75.75h-2.25v-13.5h2.25a.75.75 0 0 1 .75.75zm-21-10.5V33a2.25 2.25 0 0 1-4.5 0V22.5a2.25 2.25 0 0 1 4.5 0m9 0V33a2.25 2.25 0 0 1-4.5 0V22.5a2.25 2.25 0 0 1 4.5 0" />
+         </svg>
+
+         <div class="flex flex-col text-left">
+            <h3 class="font-bold text-[clamp(1.5rem,2.5vw,2rem)]">
+               Aprende alemán
+            </h3>
+
+            <p class="font-light">
+               837 profesores
+            </p>
+         </div>
+      </div>
+
+      <div class="learning-card">
+         <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="none" viewBox="0 0 48 48">
+            <path fill="#000" fill-rule="evenodd"
+               d="M14 10.762c0 3.572 3 3.286 3 3.286v4s-3.2 7-6 3.889c0 3.11 2.8 3.11 2.8 3.11H15v4s-2.4 7-6 3.89c0 1.67 1.039 2.444 2 2.802v8.309h26v-8.309c.962-.358 2-1.131 2-2.802-2.749 2.375-5.06-1.145-6-2.942v-4.947h1.2s2.8 0 2.8-3.111c-2.272 2.524-5.038-1.608-6-3.257v-4.632s3 .286 3-3.286c-4 4.286-10-6.714-10-6.714s-6 11-10 6.714m-1 31.286v-6h2v6zm4 0h2v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2h2v-6H17zm16-6v6h2v-6zm-4-22v4h-2v-1a1 1 0 0 0-2 0v1h-2v-1a1 1 0 0 0-2 0v1h-2v-4zm-12 15v-4h14v4h-2v-1a1 1 0 0 0-2 0v1h-2v-1a1 1 0 0 0-2 0v1h-2v-1a1 1 0 0 0-2 0v1z"
+               clip-rule="evenodd" />
+         </svg>
+
+         <div class="flex flex-col text-left">
+            <h3 class="font-bold text-[clamp(1.5rem,2.5vw,2rem)]">
+               Aprende chino
+            </h3>
+
+            <p class="font-light">
+               1.829 profesores
+            </p>
+         </div>
+      </div>
+
+      <div class="learning-card">
+         <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="none" viewBox="0 0 48 48">
+            <path fill="#000" fill-rule="evenodd"
+               d="M21.614.223a2.57 2.57 0 0 1 1.306 3.394c-.48 1.084-.95 2.767-1.334 4.903a128.6 128.6 0 0 0 20.77-2.434 2.573 2.573 0 1 1 1.005 5.047c-7.409 1.474-14.914 2.348-22.426 2.554a73 73 0 0 0-.226 6.823c2.513-.32 4.957-.288 7.08.103q1.515.285 2.952.716.18-1.046.123-1.868a2.571 2.571 0 1 1 5.13-.35 13.7 13.7 0 0 1-.42 4.224c3.333 1.827 5.963 4.354 7.352 7.35 1.213 2.613 1.447 5.545.343 8.439-1.08 2.845-3.36 5.417-6.724 7.604a2.571 2.571 0 1 1-2.801-4.313c2.743-1.78 4.131-3.573 4.721-5.119a5.48 5.48 0 0 0-.206-4.447c-.764-1.652-2.317-3.298-4.508-4.628a36.7 36.7 0 0 1-4.608 7.049 37.7 37.7 0 0 1-4.516 4.628c.81 1.492 1.735 2.695 2.76 3.576a2.571 2.571 0 0 1-3.346 3.906 17.2 17.2 0 0 1-3.6-4.434c-2.27 1.358-4.663 2.321-7.087 2.675-2.009.294-4.443.157-6.565-.748-2.205-.936-4.228-2.801-4.663-5.845-1.053-7.382 3.439-12.535 8.767-15.43a27.4 27.4 0 0 1 4.697-1.974 79 79 0 0 1 .181-7.903 120 120 0 0 1-12.651-.843 2.572 2.572 0 1 1 .614-5.109c4.19.5 8.404.773 12.624.816.445-2.811 1.07-5.28 1.861-7.056A2.57 2.57 0 0 1 21.614.223m-5.685 26.726q-1.34.504-2.585 1.176c-4.255 2.307-6.765 5.718-6.127 10.182.12.837.6 1.42 1.584 1.838 1.07.453 2.513.583 3.806.391 1.817-.264 3.761-1.08 5.691-2.307q-.195-.552-.373-1.108c-.995-3.164-1.636-6.655-1.996-10.172m6.669 7.851a34 34 0 0 0 2.578-2.798 32 32 0 0 0 3.847-5.821 24 24 0 0 0-2.167-.508c-1.687-.312-3.737-.319-5.883-.01.288 3.216.816 6.346 1.625 9.137"
+               clip-rule="evenodd" />
+         </svg>
+
+         <div class="flex flex-col text-left">
+            <h3 class="font-bold text-[clamp(1.5rem,2.5vw,2rem)]">
+               Aprende japonés
+            </h3>
+
+            <p class="font-light">
+               315 profesores
+            </p>
+         </div>
+      </div>
+
+      <div class="learning-card">
+         <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="none" viewBox="0 0 48 43">
+            <path fill="#000"
+               d="M37.333 19.997v-6.56h1.334l.816 1.647a4.48 4.48 0 0 0 5.692 2.183A4.53 4.53 0 0 0 48 13.06V6.719a5.38 5.38 0 0 0-1.808-4.032h.475A1.34 1.34 0 0 0 48 1.345C48 .604 47.4 0 46.667 0h-9.334c-5.891 0-10.666 4.812-10.666 10.75H12.4c-2.558 0-4.8 1.369-6.042 3.427C2.767 14.655 0 17.754 0 21.5v4.703c0 1.117.892 2.016 2 2.016s2-.899 2-2.016V21.5a3.37 3.37 0 0 1 1.392-2.73 7.1 7.1 0 0 0 1.133 3.058l2.35 3.56c.692 1.042.533 2.41-.1 3.494a9.63 9.63 0 0 0-.833 7.886L9.4 41.17a2.67 2.67 0 0 0 2.533 1.84h2.809c1.816 0 3.108-1.798 2.533-3.536l-1.733-5.25a1.5 1.5 0 0 1 .358-1.528l1.058-1.067a5.93 5.93 0 0 0 1.717-4.174q0-.29-.025-.579l7 2.016q.513.148 1.025.235l-.008 11.186A2.674 2.674 0 0 0 29.333 43H32a2.674 2.674 0 0 0 2.667-2.687v-13.8a9.2 9.2 0 0 0 2.666-6.357zm4-14.622c.354 0 .693.142.943.394a1.35 1.35 0 0 1 0 1.9 1.33 1.33 0 0 1-1.886 0 1.35 1.35 0 0 1 0-1.9c.25-.252.59-.394.943-.394" />
+         </svg>
+
+         <div class="flex flex-col text-left">
+            <h3 class="font-bold text-[clamp(1.5rem,2.5vw,2rem)]">
+               Aprende sueco
+            </h3>
+
+            <p class="font-light">
+               127 profesores
+            </p>
+         </div>
+      </div>
+
+      <div class="learning-card">
+         <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="none" viewBox="0 0 48 48">
+            <path fill="#000"
+               d="M19.5 2.138c-.716.518-2.044 1.632-2.145 2.294.22.3.61.562.89.724h2.51c.347-.261.701-.413.89-.724-.426-1.035-1.281-1.687-2.145-2.293m-.841 4.706-1.078 4.312h3.838l-1.078-4.312zm9.841 2.11c-1.502 2.002-3.406 3.922-5 5.676-.928 1.02-1.748 1.983-2.314 2.83-.565.848-.842 1.571-.842 2.04q0 .295.046.567c4.227-2.66 7.64-6.604 9.11-9.857a31 31 0 0 1-1-1.257m2.208 2.645c-1.806 3.556-5.316 7.386-9.659 10.044.435.616.976 1.05 1.34 1.299 4.836-3.012 7.976-6.354 9.74-9.797-.47-.505-.95-1.021-1.421-1.546M17.27 12.844l-.744 8.176.675 1.012c1.334 2 2.993 3.389 4.454 4.657v-2.207c-.943-.604-3-2.235-3-4.982 0-1.031.473-1.995 1.126-2.976.556-.833 1.267-1.686 2.05-2.563l-.102-1.117zm16.07 1.612c-1.708 3.092-4.41 6.03-8.217 8.7h2.94c3.527-2.507 5.62-4.773 6.392-7.445-.4-.464-.748-.856-1.115-1.255m5.659.48a20 20 0 0 1-1.627 1.83q.125.195.238.39h3.415a20.4 20.4 0 0 1-2.026-2.22m-3.31 2.345c-.902 2.154-2.545 4.032-4.824 5.875h3.402c.384-.216 2.388-1.442 2.388-3.656 0-.469-.277-1.192-.842-2.04zM8.156 18.642c-.689 1.469-1.214 2.734-1.53 3.892-.479 1.758-.524 3.276-.002 5.122h1.532zm1.688 0v9.014h.417c.476-.443.928-.834 1.386-1.23.206-1.328.095-2.54-.274-3.892-.315-1.158-.84-2.423-1.53-3.892m28.436.202c.082.447.075.891.023 1.312h6.055c-.51-.5-.952-.885-1.446-1.312zm-32.443.848C4.543 20.937 2.421 22.468 2.344 24c0 2.214 2.004 3.44 2.388 3.656h.151c-.462-1.94-.387-3.724.115-5.565.213-.779.496-1.57.84-2.4m6.326 0c.343.83.626 1.62.839 2.399.25.917.394 1.821.418 2.737a18 18 0 0 0 1.855-2.064c-.894-1.267-2.039-2.13-3.112-3.072m25.629 2.152a6 6 0 0 1-.894 1.312h8.697q.06-.311.061-.656a2.1 2.1 0 0 0-.105-.656zM16.5 23.936c-1.434 1.845-3.053 3.154-4.32 4.262-.738.646-1.353 1.227-1.752 1.765-.399.539-.584.998-.584 1.537 0 2.214 2.004 3.44 2.388 3.656h8.357c.178-2.18.411-4.189 1.067-6.197a25 25 0 0 0-.837-.761c-1.266-1.108-2.884-2.417-4.319-4.262m6.844.908v4.312h10.312v-4.312zm12 0v1.312h7.924c.215-.121.94-.56 1.535-1.312zm0 3v1.849c.25.356.358.756.484 1.234.163.617.292 1.365.401 2.219.258 2.35.39 4.463.468 6.51h5.96V27.844zm-30 1.5v11.812h5.812v-4.674c-.943-.604-3-2.235-3-4.982 0-.796.26-1.518.655-2.156zm17.659 1.5c-.34.884-.468 1.972-.568 2.812h12.156c-.184-.954-.25-2.042-.581-2.812zm-.736 4.5a100 100 0 0 0-.236 3.88 184 184 0 0 0-.134 4.35l2.469-8.23zm4.262 0 1.971 9.853 1.97-9.853zm6.105 0 2.483 8.276a179 179 0 0 0-.125-4.401 96 96 0 0 0-.232-3.875zm-19.79 1.5v4.312h7.312v-4.312zm12.492 1.139-2.499 8.33h4.165zm6.328 0-1.666 8.33h4.165zm5.088 3.36c.052 1.847.073 3.543.083 4.97h8.396c-.456-1.71-.985-3.576-2.124-4.97zm-31.895 1.5c-1.04 1.04-1.93 1.984-2.31 3.47h6.388c.374-1.187.852-2.473 1.411-3.47zm7.545 0c-.762 1.19-1.345 2.347-1.698 3.47h9.468c.01-1.042.025-2.206.054-3.47z" />
+         </svg>
+
+         <div class="flex flex-col text-left">
+            <h3 class="font-bold text-[clamp(1.5rem,2.5vw,2rem)]">
+               Aprende árabe
+            </h3>
+
+            <p class="font-light">
+               292 profesores
+            </p>
+         </div>
+      </div>
+   </section>
+
+   <!-- ratings section -->
+   <section
+      class="grid grid-cols-6 md:grid-cols-3 xl:grid-cols-5 lg:grid-cols-3 mb-10 place-content-center w-full max-w-7xl mx-auto py-15 gap-y-14 gap-x-8 line-separator lg:after:hidden">
+
+      <div class="min-[300px]:max-[460px]:col-span-full col-span-3 md:col-span-1 lg:col-span-1 text-center">
+         <h3 class="text-[1.7rem] font-bold">
+            Más de 10 000
+         </h3>
+
+         <p class="text-[1.1rem] font-light lg:font-semibold lg:text-secondary">
+            valoraciones positivas
+         </p>
+      </div>
+
+      <div class="min-[300px]:max-[460px]:col-span-full text-center col-span-3 md:col-span-1 lg:col-span-1">
+         <h3 class="text-[1.7rem] font-bold">
+            Más de 50 000
+         </h3>
+
+         <p class="text-[1.1rem] font-light lg:font-semibold lg:text-secondary">
+            usuarios registrados mundialmente
+         </p>
+      </div>
+
+      <div class="hidden text-center lg:inline col-span-6 md:col-span-1 lg:col-span-1">
+         <h3 class="text-[1.7rem] font-bold">
+            Más de 50
+         </h3>
+
+         <p class="text-[1.1rem] font-light lg:font-semibold lg:text-secondary">
+            idiomas distintos impartidos
+         </p>
+      </div>
+
+      <div class="col-span-3 text-center hidden lg:col-span-1 lg:inline ">
+         <h3 class="text-[1.7rem] font-bold">
+            Más de 5 000
+         </h3>
+
+         <p class="w-3xs mx-auto text-[1.1rem] font-light lg:font-semibold lg:text-secondary">
+            profesores con disponibilidad adaptable
+         </p>
+      </div>
+
+      <div class="col-span-6 md:col-span-1 lg:col-span-1 text-center ">
+         <div class="text-center flex justify-center items-center">
+
+            <div class="flex justify-center items-center gap-2.5">
+               <h3 class="text-[1.7rem] font-bold">
+                  4,2
+               </h3>
+               <div class="flex">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                        fill="#1D1B20" />
+                  </svg>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                        fill="#1D1B20" />
+                  </svg>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                        fill="#1D1B20" />
+                  </svg>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                        fill="#1D1B20" />
+                  </svg>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M8.85 17.825L12 15.925L15.15 17.85L14.325 14.25L17.1 11.85L13.45 11.525L12 8.125L10.55 11.5L6.9 11.825L9.675 14.25L8.85 17.825ZM5.825 22L7.45 14.975L2 10.25L9.2 9.625L12 3L14.8 9.625L22 10.25L16.55 14.975L18.175 22L12 18.275L5.825 22Z"
+                        fill="#1D1B20" />
+                  </svg>
+               </div>
+            </div>
+         </div>
+         <p class="text-[1.1rem] font-light lg:font-semibold lg:text-secondary">
+            en la App Store
+         </p>
+      </div>
+
+   </section>
+
+   <!-- intro statement -->
+   <section class="lg:w-240 mx-auto flex flex-col text-center gap-20 sm:gap-30 py-5 px-[clamp(2.5rem,4.5vw,2rem)]">
+      <div class="statement-container">
+         <h2
+            class="opacity-0 -translate-y-6 transition-all duration-1000 ease font-bold text-[clamp(2.8rem,7vw+1rem,6rem)] leading-[1.1] text-left md:text-center reveal">
+            Encuentra un nuevo propósito
+         </h2>
+
+         <p class="lg:w-3xl mx-auto text-xl text-pretty text-left md:text-center">
+            Aprende algo nuevo cada día con profesores reales y mejora tus habilidades desde cualquier lugar.
+            <span class="relative whitespace-nowrap">
+               <span class="absolute inset-0 block skew-y-2 bg-amber-200"></span>
+               <span class="relative font-bold">Tú eliges el ritmo.</span>
+            </span>
+         </p>
+      </div>
+
+      <div class="statement-container">
+         <h2
+            class="opacity-0 -translate-y-6 transition-all duration-1000 ease font-bold text-[clamp(2.8rem,7vw+1rem,6rem)] leading-[1.1] text-right md:text-center reveal">
+            Intercambio cultural
+         </h2>
+
+         <p class="lg:w-3xl mx-auto text-xl text-pretty text-right md:text-center">
+            Abre tu mente y descubre nuevas culturas, valores y perspectivas globales.
+            <span class="relative whitespace-nowrap">
+               <span class="absolute inset-0 block skew-y-2 bg-indigo-300"></span>
+               <span class="relative font-bold">Conecta con el mundo.</span>
+            </span>
+         </p>
+      </div>
+
+      <div class="statement-container">
+         <h2
+            class="opacity-0 -translate-y-6 transition-all duration-1000 ease font-bold text-[clamp(2.8rem,7vw+1rem,6rem)] leading-[1.1] text-left md:text-center reveal">
+            Invierte en ti mismo
+         </h2>
+
+         <p class="lg:w-3xl mx-auto text-xl text-pretty text-left md:text-center">
+            Ya sea por pasión o trabajo, los resultados de tu aprendizaje te abrirán
+            un mundo de oportunidades en cualquier ámbito.
+            <span class="relative whitespace-nowrap">
+               <span class="absolute inset-0 block skew-y-2 bg-lime-200"></span>
+               <span class="relative font-bold">Hazte valer.</span>
+            </span>
+         </p>
+      </div>
+   </section>
+
+   <!-- become tutor section -->
+   <section class="w-full py-12 px-12 bg-violet-200 mt-20 mb-20">
+      <div class="grid grid-cols-1 lg:grid-cols-2 place-content-center">
+         <img loading="lazy" src="../assets/images/teacher.avif" alt="Profesor posando para una foto con un fondo claro"
+            class="rounded-md lg:h-auto shadow-lg opacity-0 -translate-y-6 transition-all duration-1000 ease reveal">
+
+         <div class="flex flex-wrap flex-col py-6 justify-center px-[clamp(0.5rem,3vw,6rem)] gap-6 md:gap-12 mt-4">
+            <div class="flex flex-col gap-[clamp(1rem,2vw,2rem)]">
+               <h2 class="font-bold text-[clamp(2rem,2.8vw+1rem,3.75rem)] leading-none">
+                  Forma parte de nuestra comunidad
+               </h2>
+               <p class="text-lg leading-[1.8]">
+                  Te ofrecemos la posibilidad de trabajar con nosotros de forma totalmente flexible. Gana dinero
+                  compartiendo tu pasión por los idiomas y potencia tus habilidades didácticas con nuevos alumnos. <span
+                     class="font-bold whitespace-nowrap">Tú eliges el cómo y el cuándo.</span>
+               </p>
+            </div>
+
+            <button class="btn btn-accent w-full group">
+               Conviértete en profesor
+               <svg
+                  class="transition-transform duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:translate-x-2"
+                  xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 16 16">
+                  <path fill="#fef7ff"
+                     d="M10.783 8.667H2.667V7.333h8.116L7.05 3.6 8 2.667 13.333 8 8 13.333l-.95-.933z" />
+               </svg>
+            </button>
+         </div>
+      </div>
+
+
+   </section>
+
+   <!-- TODO: section para aplicaciones/requisitos de profesores -->
+
+   <!-- footer section -->
+   <footer class="bg-surface-900 w-full mt-10 pb-6">
+      <div class="flex-center flex-col line-separator after:border-white/20 after:border-b py-8">
+         <!-- SVG logo -->
+         <a href="#">
+            <img src="../assets/icons/logos/logo-acadely-v2-white.svg" alt="" class="h13 w-auto">
+         </a>
+         <p class="text-white font-semibold text-center">
+            Estudia idiomas, conecta con el mundo.
+         </p>
+      </div>
+
+      <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 py-10 gap-14">
+
+         <!-- socials -->
+         <div class="flex flex-col items-center md:items-center font-semibold">
+            <p class="text-white text-[1rem] mb-4 tracking-wide">
+               Acadely social
+            </p>
+            <nav aria-label="Redes sociales">
+               <ul class="flex flex-col gap-3 text-secondary ">
+                  <li class="group">
+                     <a href="#" class="flex items-center gap-3 hover:text-primary transition-colors">
+                        <div class="w-5 h-5 flex-center">
+
+                           <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" fill="none"
+                              viewBox="0 0 14 14">
+                              <path fill="#fff"
+                                 d="M4.55 1.167h4.9a3.386 3.386 0 0 1 3.383 3.383v4.9a3.383 3.383 0 0 1-3.383 3.383h-4.9A3.386 3.386 0 0 1 1.167 9.45v-4.9A3.383 3.383 0 0 1 4.55 1.167m-.117 1.166a2.1 2.1 0 0 0-2.1 2.1v5.134c0 1.16.94 2.1 2.1 2.1h5.134a2.1 2.1 0 0 0 2.1-2.1V4.433a2.1 2.1 0 0 0-2.1-2.1zm5.63.875a.73.73 0 1 1 0 1.459.73.73 0 0 1 0-1.459M7 4.083a2.917 2.917 0 1 1 0 5.834 2.917 2.917 0 0 1 0-5.834M7 5.25a1.75 1.75 0 1 0 0 3.5 1.75 1.75 0 0 0 0-3.5" />
+                           </svg>
+                        </div>
+                        <span class="text-[1rem]">Instagram</span>
+                     </a>
+                  </li>
+
+                  <li class="group">
+                     <a href="#" class="flex items-center gap-3 hover:text-primary transition-colors">
+                        <div class="w-5 h-5 flex-center">
+                           <!--  -->
+                           <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" fill="none"
+                              viewBox="0 0 14 14">
+                              <path fill="#fff"
+                                 d="m6.667 8.833 3.027-1.75-3.027-1.75zm6.743-4.567q.112.41.163 1.108c.041.467.059.87.059 1.22l.035.49c0 1.277-.094 2.216-.257 2.817q-.22.789-1.01 1.009c-.273.076-.775.128-1.545.163a39 39 0 0 1-2.094.059l-.928.035c-2.444 0-3.966-.094-4.567-.257q-.79-.22-1.01-1.01-.111-.408-.163-1.107c-.04-.467-.058-.87-.058-1.22L2 7.083c0-1.277.093-2.216.257-2.817.145-.525.484-.864 1.009-1.01.274-.075.776-.128 1.546-.163.758-.04 1.452-.058 2.094-.058L7.833 3c2.444 0 3.967.093 4.568.257q.789.22 1.009 1.009" />
+                           </svg>
+
+                        </div>
+                        <span class="text-[1rem]">YouTube</span>
+                     </a>
+                  </li>
+
+                  <li class="group">
+                     <a href="#" class="flex items-center gap-3 hover:text-primary transition-colors">
+                        <div class="w-5 h-5 flex-center">
+
+                           <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" fill="none"
+                              viewBox="0 0 11 11">
+                              <path fill="#fff"
+                                 d="M9.333 0A1.167 1.167 0 0 1 10.5 1.167v8.166A1.167 1.167 0 0 1 9.333 10.5H1.167A1.167 1.167 0 0 1 0 9.333V1.167A1.167 1.167 0 0 1 1.167 0zm-.291 9.042V5.95A1.9 1.9 0 0 0 7.14 4.048c-.496 0-1.073.304-1.353.759v-.648H4.159v4.883h1.628V6.166a.814.814 0 1 1 1.627 0v2.876zM2.263 3.243a.98.98 0 0 0 .98-.98.983.983 0 1 0-.98.98m.811 5.799V4.159H1.458v4.883z" />
+                           </svg>
+                        </div>
+                        <span class="text-[1rem]">LinkedIn</span>
+                     </a>
+                  </li>
+
+                  <li class="group">
+                     <a href="#" class="flex items-center gap-3 hover:text-primary transition-colors">
+                        <div class="w-5 h-5 flex-center">
+                           <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" fill="none"
+                              viewBox="0 0 14 14">
+                              <path fill="#fff" fill-rule="evenodd"
+                                 d="M3.657.475C4.731.355 5.852.25 7 .25s2.269.105 3.343.225a3.63 3.63 0 0 1 3.194 3.203c.115 1.069.213 2.182.213 3.322s-.098 2.253-.213 3.322a3.63 3.63 0 0 1-3.194 3.203c-1.074.12-2.195.225-3.343.225s-2.269-.105-3.343-.225a3.63 3.63 0 0 1-3.194-3.203C.348 9.253.25 8.14.25 7s.098-2.253.213-3.322A3.63 3.63 0 0 1 3.657.475m4.675 2.407a.625.625 0 0 0-1.234.141V8.8a1.552 1.552 0 1 1-1.552-1.552.625.625 0 0 0 0-1.25A2.802 2.802 0 1 0 8.348 8.8V5.31c.6.51 1.374.79 2.282.79a.625.625 0 1 0 0-1.25c-.66 0-1.15-.204-1.511-.525-.368-.328-.641-.816-.787-1.443"
+                                 clip-rule="evenodd" />
+                           </svg>
+
+                        </div>
+                        <span class="text-[1rem]">TikTok</span>
+                     </a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+
+         <!-- profesores -->
+         <div class="flex flex-col items-center md:items-center font-semibold">
+            <div>
+               <p class="text-white text-[1rem] mb-4 tracking-wide">
+                  Profesores
+               </p>
+               <nav aria-label="Profesores">
+                  <ul class="flex flex-col gap-3 text-secondary ">
+                     <li class="group">
+                        <a class="hover:text-primary transition-colors" href="#">Dar clases online</a>
+                     </li>
+
+                     <li class="group">
+                        <a class="hover:text-primary transition-colors" href="#">Preguntas frecuentes</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+
+         <!-- about -->
+         <div class="flex flex-col items-center md:items-center font-semibold">
+            <div>
+               <p class="text-white text-[1rem] mb-4 tracking-wide">
+                  Sobre nosotros
+               </p>
+               <nav aria-label="Profesores">
+                  <ul class="flex flex-col gap-3 text-secondary ">
+                     <li class="group">
+                        <a class="hover:text-primary transition-colors" href="#">Contacto</a>
+                     </li>
+
+                     <li class="group">
+                        <a class="hover:text-primary transition-colors" href="#">Quiénes somos</a>
+                     </li>
+
+                     <li class="group">
+                        <a class="hover:text-primary transition-colors" href="#">Privacidad</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+
+      </div>
+      <div class="grid place-content-center">
+         <p class="text-white text-sm">
+            &copy; <span id="year"></span> Acadely. Todos los derechos reservados.
+         </p>
+      </div>
+   </footer>
+
+   <script>
+      const menuBtn = document.getElementById('menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      menuBtn.addEventListener('click', () => {
+         const isClosed = mobileMenu.classList.contains("hidden")
+         mobileMenu.classList.toggle('hidden');
+         menuBtn.setAttribute("aria-expanded", isClosed ? "true" : "false")
+      });
+
+      // observer(s) options para efecto slide
+      const observerOptions = {
+         root: null, // para que pille el viewport
+         threshold: 0.2 // disparador al 20%
+      }
+
+      // inicialización del observer
+      const observer = new IntersectionObserver((entries, observer) => {
+         entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+               const element = entry.target
+               element.classList.remove("opacity-0", "-translate-y-6")
+               element.classList.add("opacity-100", "translate-y-0")
+
+               observer.unobserve(element)
+            }
+         })
+      }, observerOptions)
+
+      // se llama al observer y suscribimos cada evento
+      document.querySelectorAll(".reveal").forEach((header) => {
+         observer.observe(header)
+      })
+
+      document.getElementById("year").textContent = new Date().getFullYear()
+   </script>
+</body>
+
+</html>
