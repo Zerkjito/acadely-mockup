@@ -1,4 +1,4 @@
-# Fully Responsive Mockup Homepage - Acadely
+# Acadely - Fully Responsive Homepage Mockup
 
 <p align="center">
   <img src="assets/images/mockup-ss.png" alt="Acadely Homepage Cover" width="1200"/>
