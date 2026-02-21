@@ -15,8 +15,6 @@ A fully responsive homepage mockup for the Acadely project. Made with HTML5, CSS
 
 ## Getting started
 
-Since Tailwind CSS is involved, it is crucial to follow the steps below in order to see the actual changes take effect.
-
 ### 1. Clone the repository
 
 ### 2. Install dependencies
