@@ -1,4 +1,5 @@
 # Acadely - Fully Responsive Homepage Mockup
+https://github.com/user-attachments/assets/699c4012-aaed-456c-8634-379f6d61a8ce
 
 <p align="center">
 
@@ -6,7 +7,7 @@
    <img src="https://img.shields.io/badge/JavaScript--black?style=for-the-badge&labelColor=black&logo=javascript&logoSize=auto" alt="Badge">
 </p>
 
-A fully responsive homepage mockup for the Acadely project. Made with HTML5, CSS3, Tailwind CSS, and JavaScript.
+A fully responsive homepage mockup for the Acadely project. Made with HTML5, Tailwind CSS, and JavaScript.
 
 ---
 
@@ -21,6 +22,10 @@ Make sure you have installed Node.js(v18+) and npm, otherwise it won't work.
 ```bash
 npm install
 ```
+
+
+
+
 
 ### 3. Start development server
 
