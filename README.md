@@ -1,10 +1,11 @@
 # Acadely - Fully Responsive Homepage Mockup
 
 <p align="center">
-  <img src="assets/images/mockup-ss.png" alt="Acadely Homepage Cover" width="1200"/>
+  <video src="/assets/demo.mp4" autoplay loop muted playsinline width="100%"></video>
 </p>
 
 <p align="center">
+
    <img src="https://img.shields.io/badge/tailwind%20css--black?style=for-the-badge&labelColor=black&logo=tailwindcss&logoSize=auto" alt="Tailwind CSS Badge">
    <img src="https://img.shields.io/badge/JavaScript--black?style=for-the-badge&labelColor=black&logo=javascript&logoSize=auto" alt="Badge">
 </p>
