@@ -1,7 +1,5 @@
 # Acadely - Fully Responsive Homepage Mockup
 
-<video src="/assets/demo.mp4" autoplay loop muted playsinline"></video>
-
 <p align="center">
 
    <img src="https://img.shields.io/badge/tailwind%20css--black?style=for-the-badge&labelColor=black&logo=tailwindcss&logoSize=auto" alt="Tailwind CSS Badge">
@@ -18,7 +16,7 @@ A fully responsive homepage mockup for the Acadely project. Made with HTML5, CSS
 
 ### 2. Install dependencies
 
-Make sure you have installed Node.js and npm, otherwise it won't work.
+Make sure you have installed Node.js(v18+) and npm, otherwise it won't work.
 
 ```bash
 npm install
